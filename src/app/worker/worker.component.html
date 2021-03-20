@@ -1,1 +1,8 @@
-<p>{{ worker }}</p>
+<ul>
+  <li><strong>Nombre del empleado:</strong> {{nameOfWorker}}</li>
+  <li><strong>Apellido del empleado:</strong> {{lastNameOfWorker}}</li>
+  <li><strong>Edad del empleado:</strong> {{ getWorkerAge() + 10}}</li>
+  <li><strong>Empresa del empleado:</strong> {{ workerCompanyInput.value}}</li>
+</ul>
+Introduce la empresa:
+<input type="text" #workerCompanyInput (keyup)="0">

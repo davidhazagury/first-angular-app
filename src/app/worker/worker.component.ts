@@ -8,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class WorkerComponent implements OnInit {
 
   constructor() { }
-  worker = ['David', 'Eric', 'Ariel', 'Alan']
+
+  nameOfWorker = 'David';
+  lastNameOfWorker = 'Hernandez'
+  private age = 27;
+  company = 'Google';
+
+  getWorkerAge(){
+    return this.age;
+  }
+
+  setCompany(company:string) {
+
+  }
+
   ngOnInit(): void {
   }
 
