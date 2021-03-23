@@ -13,7 +13,11 @@ export class WorkerComponent implements OnInit {
   lastNameOfWorker = 'Hernandez'
   private age = 27;
   company = 'Google';
-
+  input = true;
+  registered = false;
+  getUserRegistration() {
+    this.registered = true;
+  }
   getWorkerAge(){
     return this.age;
   }

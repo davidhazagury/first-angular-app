@@ -5,4 +5,9 @@
   <li><strong>Empresa del empleado:</strong> {{ workerCompanyInput.value}}</li>
 </ul>
 Introduce la empresa:
-<input type="text" #workerCompanyInput (keyup)="0">
+<input type="text" #workerCompanyInput (keyup)="0" [disabled]="input">
+
+
+Registrado: <input type="checkbox" [checked]="registered">
+
+{{getUserRegistration()}}
